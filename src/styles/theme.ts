@@ -33,6 +33,4 @@ const theme = makeTheme({
   },
 })
 
-console.log(theme)
-
 export default theme
