@@ -1,14 +1,28 @@
 import React from 'react'
 import { Button, Container } from 'theme-ui'
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 
-const Home: NextPage = () => {
+interface Props {
+  title: string
+}
+
+const Home: NextPage<Props> = ({ title }) => {
   return (
     <Container>
-      <h1>Home</h1>
+      <h1>{title}</h1>
       <Button>Click me</Button>
     </Container>
   )
+}
+
+export const getStaticProps: GetStaticProps = () => {
+  // call some cms
+
+  return {
+    props: {
+      title: 'Welcome to my site',
+    },
+  }
 }
 
 export default Home

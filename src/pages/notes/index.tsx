@@ -1,6 +1,7 @@
 import React from 'react'
 import { GetServerSideProps, NextPage } from 'next'
 import { Card, Container, Grid } from '@theme-ui/components'
+import Link from 'next/link'
 
 interface Props {
   notes: any[]
@@ -12,7 +13,11 @@ const Notes: NextPage<Props> = ({ notes }) => {
       <h1>Notes</h1>
       <Grid variant="card">
         {notes.map((n) => (
-          <Card key={n.id}>{n.title}</Card>
+          <Card key={n.id}>
+            <Link href="/notes/[id]" as={`/notes/${n.id}`}>
+              {n.title}
+            </Link>
+          </Card>
         ))}
       </Grid>
     </Container>

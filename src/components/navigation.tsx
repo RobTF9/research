@@ -11,9 +11,6 @@ const Navigation = () => {
       <Link href="/notes" passHref>
         <NavLink>Notes</NavLink>
       </Link>
-      <Link href="/notes/1" passHref>
-        <NavLink>Note 1</NavLink>
-      </Link>
     </Flex>
   )
 }
