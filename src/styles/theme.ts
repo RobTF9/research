@@ -15,14 +15,28 @@ const theme = makeTheme({
       height: '100vh',
     },
   },
+  cards: {
+    primary: {
+      p: '4',
+      borderRadius: 'md',
+      boxShadow: 'md',
+    },
+  },
   links: {
     nav: {
       mr: '2',
     },
   },
+  grids: {
+    card: {
+      gap: '3',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+    },
+  },
   layout: {
     container: {
-      p: '2',
+      px: '4',
+      py: '2',
     },
   },
   sizes: {
