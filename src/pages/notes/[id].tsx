@@ -7,7 +7,7 @@ const Note: NextPage = () => {
     query: { id },
   } = useRouter()
 
-  return <h1>Note {id}</h1>
+  return <h1>Note: {id}</h1>
 }
 
 export default Note
