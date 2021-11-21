@@ -10,7 +10,7 @@ const Home: NextPage<Props> = ({ title }) => {
   return (
     <Container>
       <h1>{title}</h1>
-      <Button>Click me</Button>
+      <Button>Click me, or dont</Button>
     </Container>
   )
 }
